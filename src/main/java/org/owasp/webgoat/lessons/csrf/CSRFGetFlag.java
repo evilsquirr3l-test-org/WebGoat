@@ -55,6 +55,7 @@ public class CSRFGetFlag {
     if (referer.equals("NULL")) {
       if ("true".equals(req.getParameter("csrf"))) {
         Random random = new Random();
+        Random random = new Random();
         userSessionData.setValue("csrf-get-success", random.nextInt(65536));
         response.put("success", true);
         response.put("message", pluginMessages.getMessage("csrf-get-null-referer.success"));
