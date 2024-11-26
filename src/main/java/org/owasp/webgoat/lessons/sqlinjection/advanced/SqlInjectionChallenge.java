@@ -69,6 +69,7 @@ public class SqlInjectionChallenge extends AssignmentEndpoint {
         ResultSet resultSet = statement.executeQuery(checkUserQuery);
         ResultSet resultSet = statement.executeQuery(checkUserQuery);
         ResultSet resultSet = statement.executeQuery(checkUserQuery);
+        ResultSet resultSet = statement.executeQuery(checkUserQuery);
 
         if (resultSet.next()) {
           if (username_reg.contains("tom'")) {
